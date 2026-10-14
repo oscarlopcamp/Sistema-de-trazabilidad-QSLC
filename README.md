@@ -4,6 +4,15 @@ Aplicación web estática (HTML, CSS y JavaScript, sin dependencias de compilaci
 
 > *Propuesta de un Ciclo de Vida para el Desarrollo de Software Cuántico Basada en el Análisis Comparativo de Modelos Clásicos y Cuánticos* — Oscar Alejandro López Campero, CENIDET.
 
+## Demostración en línea
+
+🔗 **[Abrir la aplicación en GitHub Pages](https://oscarlopcamp.github.io/Sistema-de-trazabilidad-QSLC/)** · [Abrir con el proyecto de ejemplo cargado](https://oscarlopcamp.github.io/Sistema-de-trazabilidad-QSLC/?demo)
+
+Repositorio: <https://github.com/oscarlopcamp/Sistema-de-trazabilidad-QSLC>
+
+> [!NOTE]
+> Esta publicación es una **página de ejemplificación** para mostrar el funcionamiento del sistema. **No cuenta con base de datos ni servidor**: toda la información que se capture se guarda únicamente en el navegador de quien la usa (`localStorage` / `IndexedDB`), no se comparte con otros usuarios y puede perderse si se borran los datos del sitio. Para conservar o compartir un proyecto use **Reportes → Exportar** y luego importe el respaldo `.json`. Consulte [Almacenamiento de datos](#almacenamiento-de-datos).
+
 ## Funcionalidades
 
 | Módulo | Qué permite |
