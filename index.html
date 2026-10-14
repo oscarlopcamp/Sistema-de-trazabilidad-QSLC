@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QSLC Trace · Ciclo de Vida de Software Cuántico</title>
+  <meta name="description" content="Sistema de trazabilidad y seguimiento del ciclo de vida propuesto para el desarrollo de software cuántico: fases, artefactos, roles, puntos de decisión, iteraciones, riesgos y evidencias.">
+  <meta name="author" content="Oscar Alejandro López Campero">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='5' fill='%237c3aed'/%3E%3Cg fill='none' stroke='%232563eb' stroke-width='3'%3E%3Cellipse cx='24' cy='24' rx='20' ry='8'/%3E%3Cellipse cx='24' cy='24' rx='20' ry='8' transform='rotate(60 24 24)'/%3E%3Cellipse cx='24' cy='24' rx='20' ry='8' transform='rotate(120 24 24)'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#view">Saltar al contenido</a>
+  <div class="app">
+    <aside class="sidebar" aria-label="Navegación principal">
+      <a class="brand" href="#/dashboard">
+        <span class="brand-logo"><svg viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="bl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#60a5fa"/><stop offset="1" stop-color="#a78bfa"/></linearGradient></defs><circle cx="24" cy="24" r="5" fill="url(#bl)"/><g fill="none" stroke="url(#bl)" stroke-width="2.6"><ellipse cx="24" cy="24" rx="20" ry="8"/><ellipse cx="24" cy="24" rx="20" ry="8" transform="rotate(60 24 24)"/><ellipse cx="24" cy="24" rx="20" ry="8" transform="rotate(120 24 24)"/></g></svg></span>
+        <span class="brand-txt"><b>QSLC Trace</b><small>Ciclo de vida · Software cuántico</small></span>
+      </a>
+      <nav id="nav"></nav>
+      <div class="side-foot">CENIDET · Ingeniería de Software<br><span>Datos almacenados localmente</span></div>
+    </aside>
+    <div class="scrim" data-action="menu-toggle"></div>
+    <div class="main">
+      <header class="topbar">
+        <button class="icon-btn menu-btn" data-action="menu-toggle" aria-label="Menú">☰</button>
+        <div class="tb-field"><label for="top-project">Proyecto</label><select id="top-project" data-change="project-switch"></select></div>
+        <div class="tb-field"><label for="top-user">Trabajando como</label><select id="top-user" data-change="current-user"></select></div>
+        <span class="tb-chip" id="top-cycle"></span>
+        <div class="tb-spacer"></div>
+        <a class="btn btn-sm btn-ghost tb-new" href="#/proyecto">Proyectos</a>
+        <button class="icon-btn" id="theme-toggle" title="Cambiar tema claro/oscuro" aria-label="Cambiar tema">◐</button>
+      </header>
+      <main id="view" tabindex="-1"></main>
+      <footer class="foot">Propuesta de un Ciclo de Vida para el Desarrollo de Software Cuántico Basada en el Análisis Comparativo de Modelos Clásicos y Cuánticos · Oscar Alejandro López Campero · CENIDET</footer>
+    </div>
+  </div>
+  <div id="modal-root"></div>
+  <div id="toast-root" aria-live="polite"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" defer></script>
+  <script src="assets/js/model.js"></script>
+  <script src="assets/js/store.js"></script>
+  <script src="assets/js/templates.js"></script>
+  <script src="assets/js/views.js"></script>
+  <script src="assets/js/demo.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
